@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Match the Monster</title>
+    <meta name="application-name" content="Match the Monster">
+    <meta name="description" content="A little project of mine, where you are given the name of a Summoners War monster and have to match it to the right image. Have fun.">
+    <meta name="keywords" content="Summoners, War, Summonerswar, Game, Puzzle, Matching">
+    <meta name="author" content="Supportato">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body onload="reset()">
+
+<fieldset>
+<legend>Element</legend>
+<div>
+<input type="checkbox" id="cb0" onclick="checkChanged(id)" checked/>
+      <label for="cb0">Fire</label> 
+</div>
+<div>   
+<input type="checkbox" id="cb1" onclick="checkChanged(id)" checked/>
+      <label for="cb1">Water</label>       
+</div>
+<div>   
+<input type="checkbox" id="cb2" onclick="checkChanged(id)" checked/>
+      <label for="cb2">Wind</label>       
+</div>
+<div>   
+<input type="checkbox" id="cb3" onclick="checkChanged(id)" checked/>
+      <label for="cb3">Light</label>       
+</div>
+<div>   
+<input type="checkbox" id="cb4" onclick="checkChanged(id)" checked/>
+      <label for="cb4">Dark</label>       
+</div>
+</fieldset>
+    
+<fieldset>
+<legend>Stars</legend>
+<div>
+<input type="checkbox" id="cb5" onclick="checkChanged(id)" checked/>
+      <label for="cb5">1</label> 
+</div>
+<div>   
+<input type="checkbox" id="cb6" onclick="checkChanged(id)" checked/>
+      <label for="cb6">2</label>       
+</div>
+<div>   
+<input type="checkbox" id="cb7" onclick="checkChanged(id)" checked/>
+      <label for="cb7">3</label>       
+</div>
+<div>   
+<input type="checkbox" id="cb8" onclick="checkChanged(id)" checked/>
+      <label for="cb8">4</label>       
+</div>
+<div>   
+<input type="checkbox" id="cb9" onclick="checkChanged(id)" checked/>
+      <label for="cb9">5</label>       
+</div>
+</fieldset> 
+<fieldset>
+<legend>Difficulty</legend>  
+<input type="radio" id="rb0" name="difficulty" value=5 onclick="checkChanged(id)">
+      <label for="rb0">Easy</label> <br>
+<input type="radio" id="rb1" name="difficulty" value=10 onclick="checkChanged(id)" checked>
+      <label for="rb1">Medium</label> <br> 
+<input type="radio" id="rb2" name="difficulty" value=15 onclick="checkChanged(id)">
+      <label for="rb2">Hard</label>  <br>
+</fieldset>
+<div>
+ <button class="button b_apply" id="b_apply" onclick="changeGameRules()">Apply Changes</button>   
+</div>
+    
+<p class="text quest" id="quest">Test</p>
+    <p class="text streak" id="streak">Streak:</p>
+    <p class="text ratio" id="ratio">Win/Loss: 0/0</p>
+    <p class="text percent" id="percent">Percent: 0%</p>
+    <p class="text credit" id="credit">Made by: Supportato</p>
+    
+
+<div class="grid" id="monster">
+ <img id="0" onclick="isClicked(id);">
+ <img id="1" onclick="isClicked(id);">
+ <img id="2" onclick="isClicked(id);">
+ <img id="3" onclick="isClicked(id);">
+ <img id="4" onclick="isClicked(id);">
+ <img id="5" onclick="isClicked(id);">
+ <img id="6" onclick="isClicked(id);">
+ <img id="7" onclick="isClicked(id);">
+ <img id="8" onclick="isClicked(id);">
+ <img id="9" onclick="isClicked(id);">
+ <img id="10" onclick="isClicked(id);" hidden>
+ <img id="11" onclick="isClicked(id);" hidden>
+ <img id="12" onclick="isClicked(id);" hidden>
+ <img id="13" onclick="isClicked(id);" hidden>
+ <img id="14" onclick="isClicked(id);" hidden>
+</div>
+<button class="button b_next" onclick="StartNewGame()">Next Riddle</button>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
